@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - apr/feature/eip712_tests
   pull_request:
     branches:
       - master
@@ -228,6 +229,7 @@ jobs:
           path: |
             tests/ragger/venv/
             tests/ragger/packages/
+
     outputs:
       py_deps: ${{ env.py_deps }}
       deb_deps: ${{ env.deb_deps }}
